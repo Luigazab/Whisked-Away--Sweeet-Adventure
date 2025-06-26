@@ -20,7 +20,7 @@ func _ready():
 	
 func _start_flash():
 	var tween := create_tween()
-	tween.tween_property(flash, "modulate:a", 1.0, 0.5)
+	tween.tween_property(flash, "modulate:a", 1.0, 0.5).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
 	await tween.finished
 	await get_tree().create_timer(0.5).timeout
 	var fade_out := create_tween()
