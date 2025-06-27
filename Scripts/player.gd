@@ -3,10 +3,12 @@ extends CharacterBody2D
 @onready var sprite = $AnimatedSprite2D
 
 var is_attacking = false
-var move_speed = 200
+var move_speed = 150
 
 func _ready():
-	sprite.animation_finished.connect(_on_animation_finished)
+	if not sprite.animation_finished.is_connected(_on_animation_finished):
+		sprite.animation_finished.connect(_on_animation_finished)
+
 
 func _physics_process(delta):
 	if is_attacking:
