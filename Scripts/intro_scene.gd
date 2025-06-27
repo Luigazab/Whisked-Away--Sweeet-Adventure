@@ -26,7 +26,7 @@ func _start_flash():
 	var fade_out := create_tween()
 	fade_out.tween_property(flash, "modulate:a", 0.0, 0.3)
 	await fade_out.finished
-	get_tree().change_scene_to_file("res://scenes/GameScene.tscn")
+	get_tree().change_scene_to_file("res://Scenes/StartArea.tscn")
 
 func _on_text_timer_timeout():
 	current_index += 1

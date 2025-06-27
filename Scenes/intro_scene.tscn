@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://ctlyoygw23pln"]
 
-[ext_resource type="Script" uid="uid://bcdbc5la53q66" path="res://Scripts/intro_scene.gd" id="1_1jfm0"]
-[ext_resource type="FontFile" uid="uid://qjygu07tk4bf" path="res://font/fot-yuruka-std.ttf" id="2_1r4ah"]
+[ext_resource type="Script" uid="uid://bcdbc5la53q66" path="res://Scripts/intro_scene.gd" id="1_bbocs"]
+[ext_resource type="FontFile" uid="uid://qjygu07tk4bf" path="res://font/fot-yuruka-std.ttf" id="2_lim1r"]
 
 [node name="IntroScene" type="Control"]
 layout_mode = 3
@@ -10,7 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_1jfm0")
+script = ExtResource("1_bbocs")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
@@ -31,7 +31,7 @@ offset_right = 246.5
 offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("2_1r4ah")
+theme_override_fonts/font = ExtResource("2_lim1r")
 theme_override_font_sizes/font_size = 20
 text = "Late into a quiet, weary night, Elise sat alone in her apartment..."
 horizontal_alignment = 1
