@@ -3,6 +3,7 @@ extends Control
 @onready var label = $IntroText
 @onready var timer = $TextTimer
 @onready var flash = $FlashOverlay
+@onready var bgm = $Intro_bgm
 
 var lines = [
 	"Late into a quiet, weary night, Elise sat alone in her apartment...",
@@ -16,6 +17,7 @@ var lines = [
 var current_index = 0
 
 func _ready():
+	bgm.play()
 	label.text = lines[current_index]
 	
 func _start_flash():
@@ -25,8 +27,9 @@ func _start_flash():
 	await get_tree().create_timer(0.5).timeout
 	var fade_out := create_tween()
 	fade_out.tween_property(flash, "modulate:a", 0.0, 0.3)
-	await fade_out.finished
 	get_tree().change_scene_to_file("res://Scenes/StartArea.tscn")
+	await fade_out.finished
+	
 
 func _on_text_timer_timeout():
 	current_index += 1
