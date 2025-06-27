@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://etxs0g16p7lw"]
 
 [ext_resource type="Texture2D" uid="uid://bii217rjhpyrm" path="res://assets/Sweets spirit.png" id="1_amhoe"]
-[ext_resource type="Script" uid="uid://ctjm54exeo1u2" path="res://Scenes/fairy.gd" id="1_pkj54"]
+[ext_resource type="Script" uid="uid://ctjm54exeo1u2" path="res://Scripts/fairy.gd" id="1_pkj54"]
 
 [sub_resource type="Animation" id="Animation_1otse"]
 length = 0.001

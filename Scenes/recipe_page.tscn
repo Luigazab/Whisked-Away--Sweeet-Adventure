@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://dh1cw2fjg8swg"]
 
-[ext_resource type="Script" uid="uid://2scmjeikq0b0" path="res://recipe_page.gd" id="1_mpmym"]
+[ext_resource type="Script" uid="uid://2scmjeikq0b0" path="res://Scripts/recipe_page.gd" id="1_mpmym"]
 [ext_resource type="Texture2D" uid="uid://dw6e6bxlxiq4h" path="res://assets/UI books & more.png" id="2_xe7wx"]
 [ext_resource type="AudioStream" uid="uid://bmng7t8swpe55" path="res://assets/Sounds/pickPage.wav" id="3_np7rn"]
 [ext_resource type="FontFile" uid="uid://qjygu07tk4bf" path="res://font/fot-yuruka-std.ttf" id="4_aeybs"]
