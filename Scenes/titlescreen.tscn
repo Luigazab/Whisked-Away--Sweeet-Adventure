@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://nlpm5jfir70y"]
+[gd_scene load_steps=11 format=3 uid="uid://nlpm5jfir70y"]
 
 [ext_resource type="Script" uid="uid://ddb7s4o80hepg" path="res://Scripts/titlescreen.gd" id="1_up5sg"]
 [ext_resource type="Texture2D" uid="uid://beynojlp3jheb" path="res://assets/e66ec8fcaa5a6f47dce9f10e2b94318a.jpg" id="2_w7bgp"]
@@ -6,6 +6,7 @@
 [ext_resource type="StyleBox" uid="uid://dhlxkprk4ayjj" path="res://assets/menu button hover.tres" id="4_sf6xc"]
 [ext_resource type="StyleBox" uid="uid://ccl6n852pmlps" path="res://assets/menu button pressed.tres" id="5_qr3m1"]
 [ext_resource type="StyleBox" uid="uid://pnx3oljmavp6" path="res://assets/menu button.tres" id="6_ghb0b"]
+[ext_resource type="AudioStream" uid="uid://pxyacay18rfs" path="res://assets/Sounds/Title_cute.wav" id="7_w7bgp"]
 
 [sub_resource type="Animation" id="Animation_67eks"]
 length = 0.001
@@ -105,6 +106,9 @@ libraries = {
 &"": SubResource("AnimationLibrary_qnmjw")
 }
 autoplay = "fade_in_title"
+
+[node name="Title_bgm" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_w7bgp")
 
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
