@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://do6iclrkv8akm"
+path="res://.godot/imported/Serene and Sweet Adieu.ogg-16bd81e27853c125a6aa08ca96f881dd.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/Serene and Sweet Adieu.ogg"
+dest_files=["res://.godot/imported/Serene and Sweet Adieu.ogg-16bd81e27853c125a6aa08ca96f881dd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
